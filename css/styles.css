@@ -33,7 +33,7 @@ body { background-color: rgb(32, 32, 32); }
     place-content: center; 
 }
 
-a[href^="images"]{
+a[href^="images"] {
     place-self: center;
 }
 
