@@ -2,7 +2,6 @@ window.addEventListener('load', function() {
   baguetteBox.run('.gallery');
 });
 
-
 const captions = [
   '',
 
@@ -32,6 +31,13 @@ const captions = [
 ];
 
 
+// * @param {array} - refers to the captions array above.
+// * the 'images' variable is equal to nothing
+// * the counter loop runs as many times as there are captions 
+// * each time a loop is completed, an image is output for display
+// * i is used as a reference to inject each image and array caption to its match
+// * @returns {image} each image is numbered from 1 - ~.
+
 const getImages = (array) => {
     let images = ''; 
         for (let i = 1; i < array.length; i++) {
@@ -40,10 +46,16 @@ const getImages = (array) => {
                        </a>`;
         }
         return images; 
-}  
+};  
 document.querySelector('.gallery').innerHTML = `${getImages(captions)}`;
 
 
+
+// * userInput is the value of what the user types in the input/searchBar
+// * the for loops runs as many times as there are images 
+// * the dataCaption variable retrieves each data-caption attribute per image
+  /*   when userInput is activated, the if statement checks whether any of the characters 
+ match the data-caption attribute and pulls each image that does while hiding images that don't match */
 
 let searchBar = document.querySelector('.search');
 let image = document.querySelectorAll('.image');
