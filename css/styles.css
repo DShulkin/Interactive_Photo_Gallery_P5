@@ -19,6 +19,11 @@ body { background-color: rgb(32, 32, 32); }
     width: 35vw;
 }
 
+.search:focus {
+    outline: none;
+    box-shadow: 0 0 0 1pt white;
+}
+
 .gallery {
     max-width: 880px;
     display: grid;
