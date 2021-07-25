@@ -31,7 +31,7 @@ const captions = [
 ];
 
 
-// * @param {array} - indicates to use an array
+// * @param {array} - indicates to use an array as an argument
 // * the 'images' variable is equal to nothing
 // * the counter loop runs as many times as there are captions 
 // * each time a loop is completed, an image is output for display
